@@ -1,126 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dieta Grátis - Sua Virada Começa Aqui</title>
+  <title>Emagreça Sem Sofrimento</title>
+
+  <!-- PIXEL DO FACEBOOK -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'TEU_ID_PIXEL_AQUI'); // <-- Substitui pelo seu ID
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1750210352247851&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- FIM DO PIXEL -->
+
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #e6f4ea;
-      color: #222;
+      font-family: Arial, sans-serif;
       text-align: center;
+      padding: 50px;
+      background-color: #fff8e1;
     }
-
-    .container {
-      padding: 30px 15px;
-      max-width: 480px;
-      margin: auto;
-    }
-
     h1 {
-      font-size: 1.8em;
-      color: #1b5e20;
-      margin-bottom: 15px;
+      color: #ff6f00;
     }
-
-    h2 {
-      font-size: 1.2em;
-      color: #444;
-      margin: 15px 0 25px 0;
-    }
-
     p {
-      font-size: 1em;
-      color: #555;
-      line-height: 1.5em;
-      margin: 0 0 25px 0;
-    }
-
-    .btn {
-      display: block;
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto 20px auto;
-      padding: 15px;
-      font-size: 1.1em;
-      color: #fff;
-      background: #1b5e20;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 0 12px #1b5e20;
-    }
-
-    .btn:hover {
-      background: #124116;
-    }
-
-    .urgencia {
-      background: #d62828;
-      color: #fff;
-      padding: 12px;
-      font-weight: bold;
-      border-radius: 5px;
-      animation: pisca 1s infinite;
-      margin-bottom: 25px;
-    }
-
-    @keyframes pisca {
-      0% { opacity: 1; }
-      50% { opacity: 0.3; }
-      100% { opacity: 1; }
-    }
-
-    .bullets {
-      text-align: left;
-      font-size: 0.95em;
-      color: #444;
-      padding: 10px 0;
+      font-size: 20px;
       margin-bottom: 30px;
     }
-
-    .bullets li {
-      margin: 10px 0;
-      list-style: none;
+    a#botao-whats {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 22px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
     }
-
-    .footer {
-      font-size: 0.8em;
-      color: #999;
-      margin-top: 20px;
+    a#botao-whats:hover {
+      background-color: #128c7e;
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>Você não precisa mais se odiar no espelho</h1>
-    <h2>Essa dieta gratuita foi criada pra mulheres que já tentaram de tudo e só querem se sentir bem de novo</h2>
+  <h1>Transforme Seu Corpo Comendo o Que Ama!</h1>
+  <p>Descubra agora o método que já mudou a vida de milhares de mulheres.</p>
 
-    <a class="btn" href="https://wa.me/5562981686811?text=Olá,%20quero%20o%20Plano%20de%20Dietas%20grátis!%20😍" target="_blank">QUERO RECEBER A DIETA GRÁTIS</a>
+  <a id="botao-whats" href="https://wa.me/5562981686811" target="_blank">Chamar no WhatsApp</a>
 
-    <div class="urgencia">
-      ENVIO IMEDIATO PELO WHATSAPP • CLIQUE ACIMA
-    </div>
-
-    <p>Se você cansou de promessas impossíveis, de se culpar toda semana e de começar do zero sozinha...  
-    Essa é a chance de recomeçar com leveza, sem culpa e com resultado de verdade.</p>
-
-    <ul class="bullets">
-      <li>✅ Plano simples, direto e sem fome</li>
-      <li>✅ Resultados a partir da 1ª semana</li>
-      <li>✅ Zero remédio, zero loucura</li>
-      <li>✅ 100% gratuito e enviado direto no Whats</li>
-    </ul>
-
-    <a class="btn" href="https://wa.me/5562981686811?text=Olá,%20quero%20o%20Plano%20de%20Dietas%20grátis!%20😍" target="_blank">QUERO RECEBER AGORA</a>
-
-    <div class="footer">
-      © 2025 - Sua Nova Vida Começa Hoje
-    </div>
-  </div>
+  <!-- EVENTO DE CLIQUE NO BOTÃO -->
+  <script>
+    document.getElementById('botao-whats').addEventListener('click', function() {
+      fbq('track', 'Lead');
+    });
+  </script>
 
 </body>
 </html>
